@@ -33,8 +33,8 @@ function Start-Visio {
 	
 	# Create New Document
 	Write-Verbose "$VerbosePrefix Create new Document"
-	$ReturnObject.Documents = $ReturnObject.App.Documents
-	$AddDoc = $ReturnObject.App.Documents.Add("")
+	$ReturnObject.Documents      = $ReturnObject.App.Documents
+	$ReturnObject.ActiveDocument = $ReturnObject.App.Documents.Add("")
 
 	# Select first page
 	Write-Verbose "$VerbosePrefix Select Page 1 as Active Page"
