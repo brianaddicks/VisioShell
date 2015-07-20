@@ -21,3 +21,5 @@ $global:stencilimport = Import-VisioStencilFile "C:\Users\brian.ADDICKS\Document
 $global:stencil = select-visiostencil $ChassisName -verbose
 $global:shape = Add-VisioStencil $Stencil 2.7984 8.4697
 $global:rectangle = Add-VisioRectangle 0.265625 6.3125 5.328125 5.9375 -TextBox -FontSize 18 -Text $ChassisName
+Set-VisioShapeFont $Rectangle -ColorInHex C00000 -Verbose
+Set-VisioPageProperty -ResizeToFitContents
